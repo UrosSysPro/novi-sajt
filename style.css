@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#navigacija{
+    height: 55px;
+    padding: 10px 20px;
+}
+#navigacija > img{
+    width: 140px;
+    height: 100%;
+    padding: 5px;
+    object-fit: scale-down;
+    display: inline-block;
+}
+#navigacija > ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+}
+#navigacija > ul > li{
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 7px; 
+    padding-right: 7px; 
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+#navigacija > ul > li:hover{
+    border-bottom: 3px solid black;
+}
+
+.design{
+    height: 500px;
+    position: relative;
+    padding:  20px 40px ;
+}
+.design > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.half{
+    width: 50%;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+.design.light h2, .design.light p{
+    color: white;
+}
+
+.design.light a{
+    display: inline-block;
+    text-decoration: none;
+    background-color:white;
+    color: black;
+    padding: 10px;
+    transition: 300ms;
+
+}
+.design.dark a{
+    display: inline-block;
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    transition: 300ms;
+}
+.design span{
+    transition: 300ms;
+}
+.design.light  a:hover{
+    background: lightgrey;
+    padding-left: 10px; 
+}
+.design.dark  a:hover{
+    /* background: lightgrey; */
+    padding-left: 10px; 
+}
+.design a:hover .icon{
+    padding-left: 10px; 
+}
+
+
+.redKartica{
+    width: 100%;
+    /* height: 420px; */
+    padding: 40px; 
+}
+.kartica{
+    display: inline-block;
+    /* height: 100%; */
+    width: 24%;
+    padding: 20px;
+}
+
+.kartica img{
+    width: 100%;
+}
